@@ -31,22 +31,13 @@ export const FeaturesDiagonal = () => {
       >
         <div className=" 2xl:w-[1150px] xl:w-[1050px]  md:w-4/5 flex justify-center bg-bgDark1 pt-12 lg:pt-24 pb-8 lg:pb-20 mx-auto lg:flex-row flex-col">
           <div className="w-3/4 lg:w-1/2 flex flex-col lg:mx-unset mx-auto">
-            <span className="block-subtitle">Accelerate Your Success</span>
+            <span className="block-subtitle">Turn your notes to slides</span>
             <h2 className="mt-10 mb-8 text-4xl lg:text-5xl block-big-title">
-              Build &amp; Launch without problems
+              Create presentations powered by Marp
             </h2>
             <p className="mb-16 text-secondaryText leading-loose">
-              Our platform enables you to launch your data-driven projects with
-              ease. Boost productivity and achieve better results. Empower your
-              decision-making with advanced analytics
+              Nota embeds Marpit, a markdown slide render library used for Marp, that turns your markdown documents to slides. See how to write markdown for Marpit <a href="https://marpit.marp.app/markdown">here</a>.
             </p>
-            <button
-              className="w-[210px] h-12 contained-button mr-10 "
-              onClick={() => setIsModalOpen(true)}
-              aria-label="Get started"
-            >
-              Get Started
-            </button>
           </div>
           <div className="w-4/5 lg:w-1/2 lg:pl-16 flex justify-center mx-auto pt-16 lg:pt-0">
             <img
