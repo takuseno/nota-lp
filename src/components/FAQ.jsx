@@ -5,7 +5,7 @@ const FAQData = [
   {
     question: "Can I use Nota for work?",
     answer:
-      "Yes, you can use Nota for work, including academic research and commercial organization, for FREE. Nota is currently license-free service.",
+      "Yes, you can use Nota for work, including academic research and commercial projects, for FREE. Nota is currently license-free service.",
   },
   {
     question: "Does Nota store any data?",
