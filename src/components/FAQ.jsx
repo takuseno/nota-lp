@@ -3,24 +3,14 @@ import { motion } from "framer-motion";
 
 const FAQData = [
   {
-    question: "Can I upgrade or downgrade my plan at any time?",
+    question: "Can I use Nota for work?",
     answer:
-      "Yes, you can easily upgrade or downgrade your plan at any time. Simply navigate to the account settings in your dashboard and choose the desired plan. The changes will be reflected immediately, and any adjustments in pricing will be applied on your next billing cycle. Our support team is more than happy to provide guidance and recommendations.",
+      "Yes, you can use Nota for work, including academic research and commercial organization, for FREE. Nota is currently license-free service.",
   },
   {
-    question: "How to claim your 25% discount offer?",
+    question: "Does Nota store any data?",
     answer:
-      "To claim your 25% discount, simply sign up for an account and enter the promotional code at checkout. The discount will be applied automatically to your purchase.",
-  },
-  {
-    question: "What's your refund policy?",
-    answer:
-      "We offer a 30-day money-back guarantee on all our plans. If you're not satisfied with our product, simply contact our support team within 30 days of purchase for a full refund.",
-  },
-  {
-    question: "How to get support for the product?",
-    answer:
-      "Our dedicated support team is here to help. You can reach out to us through the contact form on our website, send an email, or engage with us via live chat. We'll be happy to assist you with any questions or concerns you may have",
+      "No. Behind Nota, there is no backend server that stores your data. Nota is completely relying on GitHub as data storage. This is the reason why you can use Nota for free because the running cost of this service is very cheap.",
   },
 ];
 
