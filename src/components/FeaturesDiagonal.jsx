@@ -36,7 +36,9 @@ export const FeaturesDiagonal = () => {
               Create presentations powered by Marp
             </h2>
             <p className="mb-16 text-secondaryText leading-loose">
-              Nota embeds Marpit, a markdown slide render library used for Marp, that turns your markdown documents to slides. See how to write markdown for Marpit <a href="https://marpit.marp.app/markdown">here</a>.
+              Nota embeds Marpit, a markdown slide render library used for Marp,
+              that turns your markdown documents to slides. See how to write markdown
+              for Marpit <a className="text-purple-400" href="https://marpit.marp.app/markdown">here</a>.
             </p>
           </div>
           <div className="w-4/5 lg:w-1/2 lg:pl-16 flex justify-center mx-auto pt-16 lg:pt-0">
