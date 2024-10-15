@@ -2,8 +2,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 
 import { InvitationModal } from "./InvitationModal";
-import screenshot1 from "../assets/images/screenshot_top1.png";
-import screenshot2 from "../assets/images/screenshot_top2.png";
+import screenshot from "../assets/images/screenshot_hero.png";
 
 export const Hero = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -62,8 +61,9 @@ export const Hero = () => {
               className="w-64 sm:w-52 h-12 rounded-xl font-bold text-primaryText border border-solid  flex justify-center items-center cursor-pointer bg-bgDark2 hover:bg-bgDark3 border-primaryColor transition"
               onClick={() => setIsModalOpen(true)}
               aria-label="Live demo"
+              disabled
             >
-              Download
+              Download (Coming soon)
             </button>
           </div>
         </motion.div>
@@ -74,7 +74,7 @@ export const Hero = () => {
         >
           <div className="relative w-screen flex justify-center ">
             <img
-              src={screenshot1.src}
+              src={screenshot.src}
               alt="Screenshot image"
               className="w-3/5 2xl:w-[1200px] mx-auto absolute z-10 rounded-xl main-border-gray hero-dashboard-border-gradient lg:top-6 xl:top-0"
             />
