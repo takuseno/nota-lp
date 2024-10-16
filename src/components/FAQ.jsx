@@ -12,6 +12,16 @@ const FAQData = [
     answer:
       "No. Behind Nota, there is no backend server that stores your data. Nota is completely relying on GitHub as data storage. This is the reason why you can use Nota for free because the running cost of this service is very cheap.",
   },
+  {
+    question: "Can I give you feedback or feature requests?",
+    answer:
+      "Yes! We really appreicate your feedback to improve Nota. Please click \"Feedback\" in the bottom of this page.",
+  },
+  {
+    question: "I really like Nota. Can I support this project?",
+    answer:
+      "Thank you! We are planning some options for this. Please revisit this page for updates.",
+  },
 ];
 
 export const FAQ = () => (

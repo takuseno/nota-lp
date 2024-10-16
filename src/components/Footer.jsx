@@ -7,7 +7,7 @@ import { NotaLogo } from "../assets/logos/NotaLogo";
 const footerData = [
   {
     title: "Products",
-    items: ["Feedback"],
+    items: [{title: "Feedback", href: "https://forms.gle/eg1dZWEcKeTp5op56"}],
   },
   //{
   //  title: "Important Links",
@@ -47,13 +47,13 @@ export const Footer = () => {
                 <h3 className="mb-6 text-2xl font-bold text-primaryText">Products</h3>
                 <ul>
                   {footerData[0].items.map((item, index) => (
-                    <li key={`${item}-${index}`} className="mb-4">
+                    <li key={`${item.title}-${index}`} className="mb-4">
                       <a
                         className="text-gray-400 hover:text-gray-300"
-                        href="#"
-                        aria-label={item}
+                        href={item.href}
+                        aria-label={item.title}
                       >
-                        {item}
+                        {item.title}
                       </a>
                     </li>
                   ))}
