@@ -19,7 +19,7 @@ export const Hero = () => {
           transition={{ duration: 0.5 }}
         >
           <h3 className="text-secondaryColor text-sm sm:text-base  mb-6 sm:mt-32 mt-16  font-bold">
-            A new sidekick for your dailiy work
+            A new sidekick for your daily work
           </h3>
         </motion.div>
         <motion.div
