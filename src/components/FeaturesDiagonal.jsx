@@ -42,11 +42,13 @@ export const FeaturesDiagonal = () => {
             </p>
           </div>
           <div className="w-4/5 lg:pl-16 flex justify-center mx-auto pt-16 lg:pt-0">
-            <img
-              src={featuresdiagonal.src}
-              alt="Feature image"
-              className="rounded-xl  main-border-gray"
-            />
+            <div className="flex justify-center">
+              <img
+                src={featuresdiagonal.src}
+                alt="Feature image"
+                className="rounded-xl  main-border-gray m-auto"
+              />
+            </div>
           </div>
         </div>
       </motion.div>
