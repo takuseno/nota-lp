@@ -76,7 +76,7 @@ export const Hero = () => {
                 }
               }}
             >
-              <option value="">Download</option>
+              <option value="">Download (v1.0.2)</option>
               <option value="linux_deb">Linux (.deb)</option>
               <option value="macos_arm">macOS (ARM)</option>
               <option value="macos_intel">macOS (Intel)</option>
