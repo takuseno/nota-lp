@@ -5,10 +5,10 @@ import { InvitationModal } from "./InvitationModal";
 import screenshot from "../assets/images/screenshot_hero.png";
 
 const PACKAGE_URLS = {
-  "linux_deb": "https://nota-desktop-release.s3.us-east-1.amazonaws.com/v1.0.1/nota_1.0.1_amd64.deb",
-  "macos_arm": "https://nota-desktop-release.s3.us-east-1.amazonaws.com/v1.0.1/Nota-1.0.1-arm64.dmg",
-  "macos_intel": "https://nota-desktop-release.s3.us-east-1.amazonaws.com/v1.0.1/Nota-1.0.1-x64.dmg",
-  "windows": "https://nota-desktop-release.s3.us-east-1.amazonaws.com/v1.0.1/Nota-1.0.1.exe",
+  "linux_deb": "https://nota-desktop-release.s3.us-east-1.amazonaws.com/v1.0.2/nota_1.0.2_amd64.deb",
+  "macos_arm": "https://nota-desktop-release.s3.us-east-1.amazonaws.com/v1.0.2/Nota-1.0.2-arm64.dmg",
+  "macos_intel": "https://nota-desktop-release.s3.us-east-1.amazonaws.com/v1.0.2/Nota-1.0.2-x64.dmg",
+  "windows": "https://nota-desktop-release.s3.us-east-1.amazonaws.com/v1.0.2/Nota-1.0.2.exe",
 };
 
 export const Hero = () => {
