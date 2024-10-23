@@ -4,6 +4,13 @@ import { motion } from "framer-motion";
 import { InvitationModal } from "./InvitationModal";
 import screenshot from "../assets/images/screenshot_hero.png";
 
+const PACKAGE_URLS = {
+  "linux_deb": "https://nota-desktop-release.s3.us-east-1.amazonaws.com/v1.0.1/nota_1.0.1_amd64.deb",
+  "macos_arm": "https://nota-desktop-release.s3.us-east-1.amazonaws.com/v1.0.1/Nota-1.0.1-arm64.dmg",
+  "macos_intel": "https://nota-desktop-release.s3.us-east-1.amazonaws.com/v1.0.1/Nota-1.0.1-x64.dmg",
+  "windows": "https://nota-desktop-release.s3.us-east-1.amazonaws.com/v1.0.1/Nota-1.0.1.exe",
+};
+
 export const Hero = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -57,14 +64,24 @@ export const Hero = () => {
             >
               Start with Browser
             </button>
-            <button
-              className="w-64 sm:w-52 h-12 rounded-xl font-bold text-primaryText border border-solid  flex justify-center items-center cursor-pointer bg-bgDark2 hover:bg-bgDark3 border-primaryColor transition"
-              onClick={() => setIsModalOpen(true)}
-              aria-label="Live demo"
-              disabled
+            <select
+              class="w-64 sm:w-52 h-12 rounded-xl font-bold text-primaryText border border-solid  flex justify-center items-center cursor-pointer bg-bgDark2 hover:bg-bgDark3 border-primaryColor transition text-center"
+              onChange={(e) => {
+                const value = e.target.value;
+                if (value !== "") {
+                  if (value === "windows") {
+                    alert("Currently, the desktop package for Windows is not signed due to an expensive license fee. When you install the app, you need to proceed to a warning popup.")
+                  }
+                  window.location.href = PACKAGE_URLS[value];
+                }
+              }}
             >
-              Download (Coming soon)
-            </button>
+              <option value="">Download</option>
+              <option value="linux_deb">Linux (.deb)</option>
+              <option value="macos_arm">macOS (ARM)</option>
+              <option value="macos_intel">macOS (Intel)</option>
+              <option value="windows">Windows (*unsigned)</option>
+            </select>
           </div>
         </motion.div>
         <motion.div
